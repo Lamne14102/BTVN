@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function giaiPhuongTrinhBacI(a, b) {
+        if (a === 0) {
+          if (b === 0) {
+            return "Phuong trinh co vo so nghiem";
+          } else {
+            return "Phuong trinh vo nghiem";
+          }
+        } else {
+          var x = -b / a;
+          return x;
+        }
+      }
+
+      var a = parseFloat(prompt("nhap a :"));
+      var b = parseFloat(prompt("nhap b :"));
+      var result = giaiPhuongTrinhBacI(a, b);
+      alert("x = " + result);
+    </script>
+  </body>
+</html>
